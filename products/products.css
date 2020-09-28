@@ -1,0 +1,17 @@
+.grid-container {
+    background-color: #FBFBFD;
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid-container__column {
+    background-color: #f1f1f1;
+    height: 30vh;
+    width: 100%; /* 30% */
+    margin: 1rem;
+    text-align: center;
+    line-height: auto;
+    font-size: 1.8rem;
+}
