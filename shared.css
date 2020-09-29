@@ -6,7 +6,6 @@ body {
     background-color: #FFFFFF;
     padding: 0;
     margin: 0;
-    height: 1500px;
 }
 
 /* Header  */
@@ -71,28 +70,148 @@ header {
 .banner-container__title {
     position: absolute;
     color: white;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
     text-align: center;
+    font-size: 3rem;
 }
 
 /* Body  */
 
 .info-container {
     text-align: center;
+    padding: 3em 0;
+}
+
+.info-container__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-container__column {
+    padding: 2rem 2rem 0 2rem;
+    width: 100%;
+}
+
+
+.info-container__column__img {
+    height: auto;
+    width: 100%;
+}
+
+.info-container__column__title {
+    width: 100%;
+    color: #406D99;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+
+.info-container__column__text {
+    padding: 0 0.3rem;
+    color: gray;
+    font-size: 1rem;
+}
+
+/* Footer */
+
+.footer-container {
+    background-color: #323233;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-container__column {
+    text-align: center;
+    width: 100%;
+}
+
+.footer-container__column__title {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.footer-container__column__text {
+    color: white;
+    font-size: 1em;
+}
+
+.footer-container__column__social {
+    display: flex;
+}
+
+.footer-container__column__social__icon {
+    color: white;
+    width: 25%;
 }
 
 @media (min-width: 50rem) {
+    .main-nav__link {
+        margin: 0 2rem;
+    }
+
+    .banner-container__title {
+        font-size: 5rem;
+    }
+
     .banner-container {
         height: 60vh;
+    }
+
+    .reversedRow {
+        flex-direction: row-reverse;
+        background-color: #FBFBFD;
+    }
+
+    .info-container__row {
+        padding: 5rem 0;
+    }
+
+    .info-container__column {
+        padding: 2rem;
+        padding: 2rem;
+        width: 50%;
+    }
+
+    .info-container__column__text, .footer-container__column__text {
+        font-size: 1.2rem;
+    }
+
+    .footer-container__column {
+        width: 50%;
+        padding: 0 5em;
+    }
+
+    .footer-container__column__title {
+        font-size: 2rem;
+        color: white;
     }
 }
 
 
-@media (min-width: 81rem) {
+@media (min-width: 80rem) {
+    .main-nav__link {
+        margin: 0 3rem;
+    }
+
+    .banner-container__title {
+        font-size: 6rem;
+    }
+
     .banner-container {
         height: 80vh;
+    }
+
+    .info-container__column__title {
+        font-size: 3rem;
+    }
+
+    .info-container__column__text, .footer-container__column__text {
+        font-size: 1.5rem;
     }
 }

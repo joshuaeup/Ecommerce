@@ -1,6 +1,6 @@
 .grid-container {
     background-color: #FBFBFD;
-    height: 900px;
+    /* height: 900px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -14,4 +14,17 @@
     text-align: center;
     line-height: auto;
     font-size: 1.8rem;
+}
+
+@media (min-width: 50rem) {
+    .grid-container__column {
+        width: 30%;
+    }
+}
+
+
+@media (min-width: 80rem) {
+    .grid-container__column {
+        width: 20%;
+    }
 }
