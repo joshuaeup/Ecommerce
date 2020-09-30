@@ -48,8 +48,17 @@ header {
 }
 
 .main-nav__logo {
-    height: auto;
-    width: 1.1rem;
+    font-size: 1.1rem;
+    color: white;
+    position: absolute;
+    left: 2rem;
+}
+
+.main-nav__cart {
+    font-size: 1.1rem;
+    color: white;
+    position: absolute;
+    right: 2rem;
 }
 
 .main-nav__link:hover,
@@ -57,6 +66,8 @@ header {
     cursor: pointer;
     color: #eeeeee;
 }
+
+/* Banner  */
 
 .banner-container {
     position: relative;
@@ -138,7 +149,7 @@ header {
 
 .footer-container__column__title {
     font-size: 1.5rem;
-    color: white;
+    color: #406D99;
 }
 
 .footer-container__column__text {
@@ -148,11 +159,18 @@ header {
 
 .footer-container__column__social {
     display: flex;
+    justify-content: space-around;
 }
 
 .footer-container__column__social__icon {
     color: white;
-    width: 25%;
+    /* width: 25%; */
+    font-size: 2.1rem;
+}
+
+.footer-container__column__social__icon:hover,
+.footer-container__column__social__icon:active {
+    cursor: pointer;
 }
 
 @media (min-width: 50rem) {
@@ -194,7 +212,6 @@ header {
 
     .footer-container__column__title {
         font-size: 2rem;
-        color: white;
     }
 }
 

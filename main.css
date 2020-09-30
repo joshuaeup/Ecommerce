@@ -22,9 +22,9 @@
 }
 
 
-.home-grid-container__column__img {
-    height: 5vh;
-    width: auto;
+.home-grid-container__column__icon {
+    color: #406D99;
+    font-size: 2rem;
 }
 
 .home-grid-container__column__title {
