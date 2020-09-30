@@ -1,5 +1,14 @@
 .home-grid-container {
-    background-color: #FBFBFD;
+    /* background-color: #FBFBFD; */
+    /* background: url("https://images.pexels.com/photos/172295/pexels-photo-172295.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") fixed; */
+    /* background-image: url("https://images.pexels.com/photos/131638/pexels-photo-131638.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-position: center;
+    background-size: cover; */
+    background-color: #ffffff;
+    /* border-top: solid #AFA291 1px;
+    border-bottom: solid #AFA291 1px; */
+    /* background: linear-gradient(to right, #9e8869a8, #AFA291); */
+    /* box-shadow: inset 0px 0px 40px 5px #AFA291; */
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -26,6 +35,7 @@
 }
 
 .home-grid-container__column__title {
+    text-transform: capitalize;
     text-align: center;
     color: #406D99;
     font-size: 1.5rem;

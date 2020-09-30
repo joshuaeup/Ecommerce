@@ -1,30 +1,159 @@
+.products-nav {
+    position: relative;
+}
+
+.products-banner-container {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+    background-color:  #FBFBFD;
+}
+
+.products-banner-container__title {
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 0.9rem 0.5rem;
+    background-color: #F7F7F7;
+    margin-bottom: 0;
+}
+
+.grid-container__column__titleLeft, .grid-container__column__titleRight {
+    margin-bottom: 0;
+}
+
+.grid-container__column__titleLeft {
+    width: 100%;
+    float: left;
+}
+
+.grid-container__column__titleRight {
+    width: 100%;
+    float: left;
+}
+
+.grid-container__column__subTitle {
+    margin-top: 0.5rem;
+    color: gray;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
 .grid-container {
     background-color: #FBFBFD;
-    /* height: 900px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .grid-container__column {
-    background-color: #f1f1f1;
-    height: 30vh;
-    width: 100%; /* 30% */
     margin: 1rem;
+    height: 70vh;
+    width: 70%; 
+}
+
+.grid-container__column__bg {
+    /* background: url("https://static.nike.com/a/images/f_auto/q_auto:eco/t_PDP_864_v1/i1-28af2738-69b1-495c-9330-417f68df4d8d/air-max-270-react-mens-shoe-zPRv3k.jpg"); */
+    background-position: center;
+    background-size: cover;
+    height: 60%;
+    width: 100%; 
     text-align: center;
     line-height: auto;
     font-size: 1.8rem;
 }
 
+.grid-container__column__bg:hover {
+    cursor: pointer;
+    filter: brightness(0.8);
+}
+
+
+
+.grid-container__column__body {
+    height: auto;
+}
+
 @media (min-width: 50rem) {
     .grid-container__column {
-        width: 30%;
+        width: 40%;
+    }
+
+    .grid-container__column__bg {
+        height: 70%;
+    }
+
+    .grid-container__column__titleLeft {
+        width: auto;
+        float: left;
+    }
+    
+    .grid-container__column__titleRight {
+        width: auto;
+        float: right;
     }
 }
 
 
 @media (min-width: 80rem) {
     .grid-container__column {
-        width: 20%;
+        width: 30%;
+    }
+
+    .grid-container__column__bg {
+        height: 80%;
     }
 }
+
+
+/* Images */
+/* 
+#grid__bg__one {
+    background-image: url("https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+
+#grid__bg__two {
+    background-image: url("https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+#grid__bg__three {
+    background-image: url("https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+#grid__bg__four {
+    background-image: url("https://images.pexels.com/photos/1267438/pexels-photo-1267438.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+#grid__bg__five {
+    background-image: url("https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+#grid__bg__six {
+    background-image: url("https://images.pexels.com/photos/2631746/pexels-photo-2631746.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+#grid__bg__seven {
+    background-image: url("https://images.pexels.com/photos/342800/pexels-photo-342800.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+#grid__bg__eight {
+    background-image: url("https://images.pexels.com/photos/1909791/pexels-photo-1909791.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+#grid__bg__nine {
+    background-image: url("https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+#grid__bg__ten {
+    background-image: url("https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+
+#grid__bg__eleven {
+    background-image: url("https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+
+#grid__bg__twelve {
+    background-image: url("https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+} */

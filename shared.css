@@ -82,13 +82,18 @@ header {
 
 .info-container {
     text-align: center;
-    padding: 3em 0;
+    padding: 3em 0 0 0;
 }
 
 .info-container__row {
+    background-color: #FBFBFD;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.reversedRow {
+    background-color: #ffffff;
 }
 
 .info-container__column {
@@ -165,7 +170,7 @@ header {
 
     .reversedRow {
         flex-direction: row-reverse;
-        background-color: #FBFBFD;
+        /* background-color: #FBFBFD; */
     }
 
     .info-container__row {
@@ -206,6 +211,8 @@ header {
     .banner-container {
         height: 80vh;
     }
+
+
 
     .info-container__column__title {
         font-size: 3rem;
