@@ -22,20 +22,21 @@ header {
     left: 0;
     background-color: #323233ef;
     display: inline-block;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
     text-align: center;
+    height: 2.4rem;
 }
 
 .main-nav__link {
+    display: none;
     position: relative;
     color: #D6D6D6;
     font-size: 1.1rem;
     margin: 0 1rem;
     text-decoration: none;
-    
 }
 
 .main-nav__logo__container {
@@ -47,11 +48,17 @@ header {
     width: auto;
 }
 
-.main-nav__logo {
+.main-nav__logo, #main-nav__responsive__toggle {
+    display: none;
     font-size: 1.1rem;
     color: white;
     position: absolute;
     left: 2rem;
+    text-decoration: none;
+}
+
+#main-nav__responsive__toggle  {
+    display: inline-block;
 }
 
 .main-nav__cart {
@@ -62,9 +69,64 @@ header {
 }
 
 .main-nav__link:hover,
-.main-nav__link:active {
+.main-nav__link:active,
+#main-nav__responsive__toggle:hover,
+#main-nav__responsive__toggle:active {
     cursor: pointer;
     color: #eeeeee;
+}
+
+/* Responsive Nav  */
+
+#responsive-nav {
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: #323233;
+    animation-name: displayHeight;
+    animation-duration: 0.8s;
+    text-align: center;
+}
+
+.responsive-nav__input {
+    height: 3vh;
+    width: 90%;
+    margin: 3rem 0 0 0;
+    border: none;
+    padding: 1.3em;
+    border-radius: 7px;
+}
+
+.responsive-nav__bottomLine {
+    border-color: gray;
+    border-width: 0.5px;
+}
+
+.responsive-nav__link {
+    display: block;
+    position: relative;
+    color: #D6D6D6;
+    font-size: 1.1rem;
+    text-align: start;
+    margin: 1rem 0 1rem 3rem;
+    text-decoration: none;
+}
+
+.responsive-nav__link__bottomLine {
+    border-color: gray;
+    border-width: 0.5px;
+    width: 80%;
+}
+
+@keyframes displayHeight {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100vh;
+    }
 }
 
 /* Banner  */
@@ -79,7 +141,7 @@ header {
 }
 
 .banner-container__title {
-    position: absolute;
+    position: relative;
     color: white;
     top: 30%;
     left: 50%;
@@ -88,6 +150,28 @@ header {
     text-align: center;
     font-size: 3rem;
 }
+
+#down-arrow-wrapper {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    text-align: center;
+    animation-name: bounce;
+    animation-duration: 1.8s; 
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0% {bottom: 4em;}
+    50% {bottom: 4.8em;}
+    100% {bottom: 4em;}
+}
+
+.down-arrow {
+    width: auto;
+    height: 4em;
+}
+
 
 /* Body  */
 
@@ -128,7 +212,7 @@ header {
 
 .info-container__column__text {
     padding: 0 0.3rem;
-    color: gray;
+    color: rgb(83, 83, 83);
     font-size: 1rem;
 }
 
@@ -149,15 +233,17 @@ header {
 
 .footer-container__column__title {
     font-size: 1.5rem;
-    color: #406D99;
+    color: white;
 }
 
 .footer-container__column__text {
+    margin: 1rem;
     color: white;
     font-size: 1em;
 }
 
 .footer-container__column__social {
+    margin: 1rem;
     display: flex;
     justify-content: space-around;
 }
@@ -175,7 +261,16 @@ header {
 
 @media (min-width: 50rem) {
     .main-nav__link {
+        display: inline-block;
         margin: 0 2rem;
+    }
+
+    .main-nav__logo {
+        display: inline-block;
+    }
+
+    #main-nav__responsive__toggle {
+        display: none;
     }
 
     .banner-container__title {
@@ -228,8 +323,6 @@ header {
     .banner-container {
         height: 80vh;
     }
-
-
 
     .info-container__column__title {
         font-size: 3rem;

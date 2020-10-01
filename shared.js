@@ -95,6 +95,11 @@ var domTitle = document.querySelectorAll(".grid-container__column__titleLeft");
 var domPrice = document.querySelectorAll(".grid-container__column__titleRight");
 var domText = document.querySelectorAll(".grid-container__column__subTitle");
 
+var responsiveToggle = document.querySelector("#main-nav__responsive__toggle");
+var responsiveNav = document.querySelector("#responsive-nav");
+var arrow = document.querySelector("#down-arrow-wrapper")
+var body = document.querySelector("body");
+
 // Loops through all of data then sets values to dom
 for (var i = 0; i < domImages.length; i++) {
     domImages[i].style.backgroundImage = "url('" + data[i].image + "')";
@@ -104,10 +109,31 @@ for (var i = 0; i < domImages.length; i++) {
 }
 
 // On click listeners
-one.addEventListener("click", function() {
-    console.log(images[0].title);
-});
+// one.addEventListener("click", function() {
+//     console.log(images[0].title);
+// });
 
-two.addEventListener("click", function() {
-    console.log(images[1].title);
-});
+// two.addEventListener("click", function() {
+//     console.log(images[1].title);
+// });
+
+
+if (responsiveToggle) {
+    responsiveToggle.addEventListener("click", function() {
+        if (responsiveNav.style.display === "none") {
+            console.log("Display");
+            if (arrow) {
+                arrow.style.display = "none";
+            }
+            responsiveNav.style.display = "block";
+            body.style.overflow = "hidden"
+        } else {
+            console.log("Hide");
+            if (arrow) {
+                arrow.style.display = "block";
+            }
+            responsiveNav.style.display = "none";
+        }
+        
+    });
+}

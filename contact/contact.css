@@ -1,13 +1,15 @@
 /* Body  */
 
 .contact-container {
-    background-color: #ffffff;
+    background-color: #FBFBFD;
     padding: 4rem 0;
 }
 
 .contact-info__row {
-    background: transparent;
+    background: #ffffff;
     padding-top: 1rem;
+    /* border: solid ; */
+    border-radius: 15px;
 }
 
 /* Banner  */
@@ -68,5 +70,10 @@ input.input-field, textarea.input-field {
     .contact-container__banner__body__text {
         width: 15%;
         text-align: center;
+    }
+
+    .contact-container {
+        background-color: #FBFBFD;
+        padding: 4rem;
     }
 }

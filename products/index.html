@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Fresh Start Home Improvement">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce</title>
     <link rel="stylesheet" href="../shared.css">
@@ -10,12 +11,22 @@
 <body>
     <header>
         <nav class="main-nav">
-            <a class="main-nav__logo" href="../index.html"><i class="fas fa-hat-wizard"> Wizard Designs</i></a>
+            <i id="main-nav__responsive__toggle" class="fas fa-bars"></i>
+            <a class="main-nav__logo" href="../index.html"><i class="fas fa-fan"> </i> Fresh Start <i class="fas fa-fan"></i></a>
             <a class="main-nav__link" href="../index.html">Home</a>
             <a class="main-nav__link" href="./index.html">Products</a>
             <a class="main-nav__link" href="../contact/index.html">Contact</a>
-            <a class="main-nav__cart" href=""><i class="fas fa-shopping-bag"></i></a>
+            <a aria-label="Navigating Link" class="main-nav__cart" href="../index.html"><i class="fas fa-shopping-bag"></i></a>
         </nav>
+        <div id="responsive-nav" style="display: none;">
+            <input class="responsive-nav__input" type="text" placeholder="Search freshstart.com">
+            <hr class="responsive-nav__bottomLine">
+            <a class="responsive-nav__link" href="../index.html">Home</a>
+            <hr class="responsive-nav__link__bottomLine">
+            <a class="responsive-nav__link" href="./index.html">Products</a>
+            <hr class="responsive-nav__link__bottomLine">
+            <a class="responsive-nav__link" href="../contact/index.html">Contact</a>
+        </div>
         <div class="products-banner-container">
             <p class="products-banner-container__title">UP TO 40% OFF	Shop Our Latest Sale Styles</p>
         </div>
@@ -144,16 +155,18 @@
     </main>
     <footer class="footer-container">
         <div class="footer-container__column">
-            <h3 class="footer-container__column__title">About</h3>
-            <p class="footer-container__column__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias excepturi quaerat tenetur, fugiat fugit voluptates sint amet vel possimus quis, veniam aliquid accusamus vitae libero? Consectetur amet voluptatem minima maiores!</p>
+            <h3 class="footer-container__column__title">About Site</h3>
+            <hr class="responsive-nav__bottomLine">
+            <p class="footer-container__column__text">This site was created for the purpose of the R2H Gateway Program for Software Development. The site was developed using strictly HTML, CSS and JavaScript</p>
         </div>
         <div class="footer-container__column">
             <h3 class="footer-container__column__title">Social Media</h3>
+            <hr class="responsive-nav__bottomLine">
             <div class="footer-container__column__social">
-                <a href="https://www.instagram.com/"><i class="footer-container__column__social__icon fab fa-instagram"></i></a>
-                <a href="https://twitter.com/joshuaeup"><i class="footer-container__column__social__icon fab fa-twitter"></i></a>
-                <a href="https://www.facebook.com/"><i class="footer-container__column__social__icon fab fa-facebook"></i></a>
-                <a href="https://www.youtube.com/"><i class="footer-container__column__social__icon fab fa-youtube"></i></a>
+                <a aria-label="Navigating to Instagram" href="https://www.instagram.com/"><i class="footer-container__column__social__icon fab fa-instagram"></i></a>
+                <a aria-label="Navigating to Twitter" href="https://twitter.com/joshuaeup"><i class="footer-container__column__social__icon fab fa-twitter"></i></a>
+                <a aria-label="Navigating to Facebook" href="https://www.facebook.com/"><i class="footer-container__column__social__icon fab fa-facebook"></i></a>
+                <a aria-label="Navigating to Youtube" href="https://www.youtube.com/"><i class="footer-container__column__social__icon fab fa-youtube"></i></a>
             </div>
         </div>
     </footer>
