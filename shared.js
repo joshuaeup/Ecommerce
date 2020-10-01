@@ -87,8 +87,8 @@ var data = [
 ];
 
 // Grid items selectors
-var one = document.querySelector("#grid__bg__one");
-var two = document.querySelector("#grid__bg__two");
+// var one = document.querySelector("#grid__bg__one");
+// var two = document.querySelector("#grid__bg__two");
 
 var domImages = document.querySelectorAll(".grid-container__column__bg");
 var domTitle = document.querySelectorAll(".grid-container__column__titleLeft");
@@ -133,6 +133,7 @@ if (responsiveToggle) {
                 arrow.style.display = "block";
             }
             responsiveNav.style.display = "none";
+            body.style.overflow = "scroll";
         }
         
     });
