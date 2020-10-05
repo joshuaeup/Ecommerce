@@ -2,24 +2,24 @@
 var data = [
     {
         id: 0,
-        title: "Kitchen",
-        price: "$500",
-        image: "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-        text: "Timeless design scheme, you can never go wrong with an all-white palette. Curious about how to pull off the look? These high-design kitchens, boasting everything from sleek cabinetry to eye-catching tiles, are all the inspiration you need to make white hues work for your own space."
+        title: "Cozy cottage",
+        price: "$2,499",
+        image: "https://www.ikea.com/images/dark-kitchen-with-black-stained-doors-and-white-countertops-3dda55b211e90ba33cf8110dcf6cf020.jpg?f=xxxl",
+        text: "Sleek black cabinets and dark wood tones make this kitchen warm and cozy all throughout the year. Open shelving, exposed beams and glass front cabinets add a layer of openness in this smaller space kitchen."
     },
     {
         id: 1,
-        title: "Kitchen",
-        price: "$800",
-        image: "https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-        text: "Embodies a sense of renewal and growth, so it's only fitting that it would be a top choice for leading designers, especially when it comes to kitchens."
+        title: "Modern and organized",
+        price: "$1,799 ",
+        image: "https://www.ikea.com/images/modern-kitchen-with-light-ash-effect-doors-and-chrome-applia-b3fdfcf6df32090a4211930d7d0d6d29.jpg?f=xxxl",
+        text: "Trendy herringbone floors, stainless steel appliances and clean ash effect cabinets update this kitchen for any modern family."
     },
     {
         id: 2,
-        title: "Kitchen",
+        title: "Traditional and simple",
         price: "$1000",
-        image: "https://images.pexels.com/photos/373548/pexels-photo-373548.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-        text: "We all want to shed light on the areas of our homes that matter most. And in spaces where you spend the majority of your time, considering custom details that you're truly passionate about can transform the look—and feel—of the space."
+        image: "https://www.ikea.com/images/grey-kitchen-with-grey-framed-glass-panel-doors-0676b854e74fdff66d89a0888a5f923d.jpg?f=xxxl",
+        text: "Cool grey twist adds modern updates to this traditional farmhouse kitchen. New black accents of hardware, soft black countertops and ceiling lights give this dimmed kitchen a sweet homey feel."
     },
     {
         id: 3,
