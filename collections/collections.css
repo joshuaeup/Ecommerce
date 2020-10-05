@@ -26,12 +26,14 @@
 
 .grid-body-container {
     background-color: #FBFBFD;
+    margin-top: 2rem;
 }
 
 .grid-body-container__title {
     margin: 0;
     font-size: 2rem;
     padding: 2rem 2rem 0.5rem 1rem;
+    color: #406D99;
 }
 
 .bottomLine {
@@ -65,9 +67,34 @@
     font-size: 1.8rem;
 }
 
+.view-btn {
+    position: absolute;
+    font-size: 1.3rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 2rem;
+    border-color: transparent;
+    border-radius: 25px;
+    display: none;
+    background-color: #598afd;
+    color: white;
+}
+
+.view-btn:hover,
+.view-btn:active {
+    outline: none;
+}
+
 .grid-container__column__bg:hover {
     cursor: pointer;
-    filter: brightness(0.8);
+    filter: brightness(0.9);
+}
+
+.grid-container__column__bg:hover > .view-btn {
+    cursor: pointer;
+    display: block;
+
 }
 
 .grid-container__column__body {
