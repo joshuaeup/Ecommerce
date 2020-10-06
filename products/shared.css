@@ -13,13 +13,13 @@
     position: absolute;
     margin-left: 50%;
     transform: translateX(-50%);
-    margin-top: 10%;
+    margin-top: 30%;
     text-align: center;
 }
 
 .products-banner-title {
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
     text-transform: uppercase;
     padding: 0;
@@ -38,12 +38,31 @@
 }
 
 .grid-container__column {
-    /* text-align: center; */
+    height: auto;
+    margin: 1rem 0;
 }
 
 .grid-container__column a {
     text-decoration: none;
     color: black;
+}
+
+.grid-container__column__body__img {
+    height: auto;
+    width: 100%;
+}
+
+
+.grid-container__column__img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+.grid-container__column__body {
+    height: auto;
+    width: 100%;
+    padding: 1rem;
 }
 
 
@@ -56,80 +75,21 @@
 
 .grid-container__column__price {
     margin: .5rem 0;
-    color: #E28C8B;
+    color: #f55653;
     font-size: 1.5rem;
 }
-
-.grid-container__column__img {
-    height: 40vh;
-    width: 100%;
-}
-
-
-/* Grid  */
-/* 
-.grid-container__column__titleLeft, .grid-container__column__titleRight {
-    margin-bottom: 0;
-}
-
-.grid-container__column__titleLeft {
-    color: black;
-    width: 100%;
-    float: left;
-}
-
-.grid-container__column__titleRight {
-    color: black;
-    width: 100%;
-    float: left;
-}
-
-.grid-container__column__subTitle {
-    margin-top: 0.5rem;
-    color: rgb(83, 83, 83);
-}
-
-.clearfix {
-    overflow: auto;
-}
-
-.grid-container {
-    background-color: #FBFBFD;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.grid-container__column {
-    height: 70vh;
-    width: 70%; 
-}
-
-.grid-container__column a {
-    text-decoration: none;
-}
-
-.grid-container__column__bg {
-    background-position: center;
-    background-size: cover;
-    height: 60%;
-    width: 100%; 
-    text-align: center;
-    font-size: 1.8rem;
-}
-
-.grid-container__column__bg:hover {
-    cursor: pointer;
-    filter: brightness(0.8);
-}
-
-.grid-container__column__body {
-    height: auto;
-} */
 
 /* Responsive Media */
 
 @media (min-width: 50rem) {
+    .products-banner-title__container {
+        margin-top: 10%;
+    }
+    
+    .products-banner-title {
+        font-size: 4rem;
+    }
+
     .grid-container__column {
         width: 40%;
     }
@@ -147,6 +107,10 @@
         width: auto;
         float: right;
     }
+
+    .grid-container__column__img {
+        width: 100%;
+    }
 }
 
 
@@ -158,6 +122,10 @@
 
     .grid-container__column__bg {
         height: 80%;
+    }
+
+    .grid-container__column__body {
+        padding: 0;
     }
 }
 
