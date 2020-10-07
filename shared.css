@@ -251,7 +251,6 @@ header {
 
 .footer-container__column__social__icon {
     color: white;
-    /* width: 25%; */
     font-size: 2.1rem;
 }
 
@@ -284,7 +283,6 @@ header {
 
     .reversedRow {
         flex-direction: row-reverse;
-        /* background-color: #FBFBFD; */
     }
 
     .info-container__row {

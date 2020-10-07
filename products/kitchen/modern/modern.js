@@ -44,9 +44,6 @@ var data = [
     }
 ];
 
-// Grid items selectors
-// var one = document.querySelector("#grid__bg__one");
-// var two = document.querySelector("#grid__bg__two");
 
 var domImages = document.querySelectorAll(".grid-container__column__img");
 var domTitle = document.querySelectorAll(".grid-container__column__title");
