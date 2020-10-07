@@ -259,6 +259,12 @@ header {
     cursor: pointer;
 }
 
+.copyright {
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+
 @media (min-width: 50rem) {
     .main-nav__link {
         display: inline-block;
