@@ -12,7 +12,7 @@ body {
 
 header {
     width: 100%;
-    margin: auto;    
+    margin: auto;
     vertical-align: middle;
 }
 
@@ -48,7 +48,8 @@ header {
     width: auto;
 }
 
-.main-nav__logo, #main-nav__responsive__toggle {
+.main-nav__logo,
+#main-nav__responsive__toggle {
     display: none;
     font-size: 1.1rem;
     color: white;
@@ -57,7 +58,7 @@ header {
     text-decoration: none;
 }
 
-#main-nav__responsive__toggle  {
+#main-nav__responsive__toggle {
     display: inline-block;
 }
 
@@ -124,6 +125,7 @@ header {
     0% {
         height: 0;
     }
+
     100% {
         height: 100vh;
     }
@@ -157,14 +159,22 @@ header {
     width: 100%;
     text-align: center;
     animation-name: bounce;
-    animation-duration: 1.8s; 
+    animation-duration: 1.8s;
     animation-iteration-count: infinite;
 }
 
 @keyframes bounce {
-    0% {bottom: 2em;}
-    50% {bottom: 2.8em;}
-    100% {bottom: 2em;}
+    0% {
+        bottom: 2em;
+    }
+
+    50% {
+        bottom: 2.8em;
+    }
+
+    100% {
+        bottom: 2em;
+    }
 }
 
 .down-arrow {
@@ -288,9 +298,17 @@ header {
     }
 
     @keyframes bounce {
-        0% {bottom: 4em;}
-        50% {bottom: 4.8em;}
-        100% {bottom: 4em;}
+        0% {
+            bottom: 4em;
+        }
+
+        50% {
+            bottom: 4.8em;
+        }
+
+        100% {
+            bottom: 4em;
+        }
     }
 
     .down-arrow {
@@ -312,7 +330,8 @@ header {
         width: 50%;
     }
 
-    .info-container__column__text, .footer-container__column__text {
+    .info-container__column__text,
+    .footer-container__column__text {
         font-size: 1.2rem;
     }
 
@@ -344,7 +363,8 @@ header {
         font-size: 3rem;
     }
 
-    .info-container__column__text, .footer-container__column__text {
+    .info-container__column__text,
+    .footer-container__column__text {
         font-size: 1.5rem;
     }
 }
