@@ -162,14 +162,14 @@ header {
 }
 
 @keyframes bounce {
-    0% {bottom: 4em;}
-    50% {bottom: 4.8em;}
-    100% {bottom: 4em;}
+    0% {bottom: 2em;}
+    50% {bottom: 2.8em;}
+    100% {bottom: 2em;}
 }
 
 .down-arrow {
     width: auto;
-    height: 4em;
+    height: 3em;
 }
 
 
@@ -285,6 +285,17 @@ header {
 
     .banner-container {
         height: 60vh;
+    }
+
+    @keyframes bounce {
+        0% {bottom: 4em;}
+        50% {bottom: 4.8em;}
+        100% {bottom: 4em;}
+    }
+
+    .down-arrow {
+        width: auto;
+        height: 4em;
     }
 
     .reversedRow {
